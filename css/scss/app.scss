@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+@import 'mixins';
+@import 'variables';
+
+@import 'tools/reset';
+@import 'tools/globals';
+
+@import 'pages/type';
+@import 'pages/layout';
+
+@import 'page-sections/header';
+@import 'page-sections/banner';
+@import 'page-sections/footer';
+@import 'page-sections/text-block';
+@import 'page-sections/text-image-block';
+
+// @import 'elements/grids';
+
+
+

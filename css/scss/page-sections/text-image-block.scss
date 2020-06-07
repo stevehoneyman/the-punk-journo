@@ -1,0 +1,198 @@
+/* text-image-block:
+----------------------------------------------------------------------------- */
+.text-image-block {
+	.container-full {
+		display: flex;
+	
+		img {
+			display: none;
+
+			@include mq(600px) {
+				display: block;	
+				align-self: flex-start;
+				min-width: 250px; // tighten
+			}
+		} 
+		
+		.content {
+			display: flex;
+			flex-direction: column;
+			margin-right: 0;
+
+			.text {
+
+				h2 {
+					padding-left: 0;
+					margin: 0;
+				}
+
+				p {
+					display: none;
+				}
+
+				.fa-star {
+					color: gold;
+				}
+			}
+
+			blockquote {
+				position: relative;
+				width: 350px;
+				height: auto;
+				padding: 10px 0 10px 20px;
+			//	border-bottom: 2px solid $black-80;
+				margin-right: 5%;
+				@include playfair;
+				font-size: 2.5rem;
+				line-height: .55;
+				font-weight: bold;	
+				color: $white;
+				background: $off-white;
+
+				&:before {
+					position: absolute;
+					display: block;
+					content: '';
+					width: 250px; // was 225px check
+					height: 325px;
+					top: 0;
+					background: url('../images/p-tat-1.jpg');
+					background-repeat: no-repeat;
+					mix-blend-mode: multiply;
+					opacity: 1;
+					overflow: hidden;
+				}
+
+				span {
+					display: block;
+					max-width: 350px;
+					padding: .75rem;
+					margin-bottom: calc(.25rem + 5px);
+					background: $black-80;
+				}
+
+				span:nth-of-type(1) {
+					padding-left: 1rem;
+					clip-path: polygon(-0.24% 7.89%, 91.42% -6.99%, 89.51% 108.42%, 2.07% 111.84%);
+				}
+				span:nth-of-type(2) {
+					padding: 1.25rem;
+					text-align: right;
+					clip-path: polygon(4.89% -18.2%, 97.42% -2.64%, 86.94% 149.36%, 2.07% 111.84%)
+				}
+				span:nth-of-type(3) {
+					padding-bottom: 1.25rem;
+					text-align: right;
+					clip-path: polygon(-0.24% -3.22%, 96.8% -19.31%, 109.18% 106.24%, -5.2% 127.06%);
+				}
+				span:nth-of-type(4) {
+					padding-right: 2rem;
+					padding-bottom: 2rem;
+					text-align: right;
+					clip-path: polygon(2.33% 1.83%, 94.85% -18.25%, 94.64% 85.56%, 2.07% 96.69%)
+				}
+			}
+
+
+			// content
+			@include mq(800px) { 
+				margin-left: 1rem;
+
+				.text {
+					display: flex;
+						p {
+							padding-right: 15%;
+							display: block;
+						}
+					}
+	
+				.links  {
+						margin: .5rem 5% 0;
+						align-self: flex-end;
+					
+					.go-to {
+							text-align: right;
+						}
+					}	
+				}
+			}
+		}
+
+	.container-half {
+		@include mq(600px) {
+			display: flex;
+		}
+
+		article {
+			width: 100%;
+			min-height: 250px;
+		
+			h3 {
+				min-height: 70px;
+				padding: .25rem;
+				font-weight: bold;
+				color: $white;
+				background: $black-80;
+			}
+
+			img {
+				width: 100%;
+				max-height: 300px; // at full width only
+				object-fit: cover;
+			//	filter: grayscale(100%);
+			}
+
+			p {
+				padding: .25rem;
+				font-size: 1rem;
+			}
+
+			@include mq(600px) {
+				width: calc(50% - 15px);
+				margin-left: 30px;
+
+				&:nth-of-type(2n+1) {
+				margin-left: 0;
+				}
+			}
+		}
+	}
+
+	.container-quarter {
+		
+		@include mq(600px) {
+			display: flex;
+		}	
+	
+		article {
+			width: 100%;
+			min-height: 250px;
+			padding: .25rem;
+			border: 1px solid $light-grey;
+		//  border-bottom: 3px solid $black-80;
+			margin-bottom: .5rem;	
+			
+			h3 {
+				@include playfair;
+				font-weight: bold;
+				color: $black-80;
+			}
+
+
+			@include mq(600px) {
+			width: calc(25% - 22.5px);
+			margin-left: 30px;
+
+				&:nth-of-type(4n+1) {
+					margin-left: 0;
+				}
+			}
+
+			img {
+
+			}
+		}
+	}
+}
+
+

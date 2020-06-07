@@ -1,0 +1,10 @@
+/* text-block:
+----------------------------------------------------------------------------- */
+.text-block {
+	.container {
+		width: 100%;
+		max-width: 70rem; // was 66rem
+		padding-top: 3rem;
+		margin: 0 auto;
+	}
+}

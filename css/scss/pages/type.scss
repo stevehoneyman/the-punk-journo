@@ -1,0 +1,79 @@
+/* typography
+----------------------------------------------------------------------------- */
+
+h1, 
+h2 {
+	@include playfair;
+	@include pf-bold;
+	color: $black-80;
+}
+
+h1 {
+	font-size: 2.5rem;
+	line-height: 1.2;
+
+	&.page-title {
+		max-width: 76rem;
+		padding-top: 1rem;
+		margin:  auto;
+	}
+}
+
+h2 {
+	position: relative;
+	display: inline-block;
+	padding: 0 1rem .75rem;
+	margin: 1rem 0;
+	font-size: 1.75rem;
+	line-height: 1.2;
+	background: $off-white;
+	
+	&.block-header {
+		transform: translateX(-5rem);
+	}
+
+	&.tat {
+		background: url('../images/tape-1.jpg');
+		background-repeat: no-repeat;
+	//	mix-blend-mode: multiply;
+		filter: grayscale(100%);
+	}
+
+	&.underline {
+		background: url('../images/underline-1.jpg');
+		background-repeat: no-repeat;
+		mix-blend-mode: multiply;
+	//	filter: grayscale(100%);	
+	}
+}
+	
+h3 {
+	@include opensans;
+	font-size: 1.25rem;
+	font-weight: normal;
+	line-height: 1.2;
+	color: $black-80;
+}
+
+p {
+	margin-bottom: 1rem;
+	font-size: 1.125rem;
+	line-height: 1.6;	
+}
+
+.text-block {
+	.big {
+		max-width: 68rem;
+		font-size: 1.4rem;
+	}			
+
+	p {
+		font-size: 1.2rem;	
+	}
+} 
+
+
+
+
+
+	

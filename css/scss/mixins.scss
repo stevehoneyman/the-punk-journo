@@ -1,0 +1,47 @@
+	/* mixins
+----------------------------------------------------------------------------- */
+
+/* layout
+--------------------------- */
+@mixin wrap-wide {
+	max-width: 78rem; // was 75rem
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin: auto;
+}
+
+@mixin wrap {
+	max-width: 70rem;
+	padding: 0 1rem;
+	margin: auto;
+}
+
+@mixin insulate {
+	margin-top: 2rem;
+}
+
+/* type
+--------------------------- */
+@mixin opensans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@mixin playfair {
+	font-family: 'Playfair Display', sans-serif;
+}
+
+@mixin pf-bold {
+	font-weight: 900;
+}
+
+@mixin open-bold {
+	font-weight: 700;
+}
+
+/* queries
+--------------------------- */
+@mixin mq( $query ) {
+	@media ( min-width: $query ) {
+		@content
+	}
+}

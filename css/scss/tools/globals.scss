@@ -1,0 +1,39 @@
+/* globals
+----------------------------------------------------------------------------- */
+.wrap-wide {
+	@include wrap-wide;
+}
+
+.wrap {
+	@include wrap;
+}
+
+.go-to {
+	display: block;
+	max-width: 10rem;
+	@include playfair;
+	font-size: 1rem;
+	font-weight: bold;
+	color: $black;
+	transition: 300ms;
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+		background: $black;
+	}
+}
+
+.no-top {
+	padding-top: 0;
+}
+
+.no-underline {
+	border: none;
+}
+
+
+code {
+	display: block;
+	color: red;
+}
