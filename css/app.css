@@ -371,6 +371,7 @@ footer {
 
 .text-image-block .container-full .content blockquote {
   position: relative;
+  align-self: flex-start;
   height: auto;
   padding: 10px 0 10px 20px;
   margin-right: 5%;
@@ -442,13 +443,13 @@ footer {
 
 @media (min-width: 800px) {
   .text-image-block .container-full .content {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .text-image-block .container-full .content .text {
     display: flex;
   }
   .text-image-block .container-full .content .text p {
-    padding-right: 15%;
+    padding-right: 10%;
     display: block;
   }
   .text-image-block .container-full .content .links {

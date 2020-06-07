@@ -37,6 +37,7 @@
 
 			blockquote {
 				position: relative;
+				align-self: flex-start;	
 			//	width: 350px;
 				height: auto;
 				padding: 10px 0 10px 20px;
@@ -104,12 +105,12 @@
 
 			// content
 			@include mq(800px) { 
-				margin-left: 1rem;
+				margin-left: 2rem;
 
 				.text {
 					display: flex;
 						p {
-							padding-right: 15%;
+							padding-right: 10%;
 							display: block;
 						}
 					}
