@@ -37,7 +37,7 @@
 
 			blockquote {
 				position: relative;
-				width: 350px;
+			//	width: 350px;
 				height: auto;
 				padding: 10px 0 10px 20px;
 			//	border-bottom: 2px solid $black-80;
@@ -49,18 +49,26 @@
 				color: $white;
 				background: $off-white;
 
+				@include mq(1200px) {
+					width: 350px;
+				}
+
 				&:before {
 					position: absolute;
 					display: block;
 					content: '';
 					width: 250px; // was 225px check
-					height: 325px;
+					height: 250px;
 					top: 0;
 					background: url('../images/p-tat-1.jpg');
 					background-repeat: no-repeat;
 					mix-blend-mode: multiply;
 					opacity: 1;
 					overflow: hidden;
+
+					@include mq(1200px) {
+						height: 325px;
+					}
 				}
 
 				span {
