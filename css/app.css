@@ -217,7 +217,13 @@ main {
 }
 
 section {
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 0 0;
+}
+
+@media (min-width: 680px) {
+  section {
+    padding: 1rem 0 3rem 0;
+  }
 }
 
 .recent-articles article:last-of-type {

@@ -9,8 +9,12 @@ main {
 }
 
 section {
-	padding: 1rem 0 3rem 0; // add wrap to this to save extra div?
+	padding: 1rem 0 0 0; // add wrap to this to save extra div?
 //	border-bottom: 1px solid $light-grey;
+
+	@include mq(680px) {
+		padding: 1rem 0 3rem 0;	
+	}
 }
 
 .recent-articles {
