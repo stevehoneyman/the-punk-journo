@@ -58,15 +58,27 @@ ul, li {
 ----------------------------------------------------------------------------- */
 .wrap-wide {
   max-width: 78rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0;
   margin: auto;
+}
+
+@media (min-width: 680px) {
+  .wrap-wide {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 .wrap {
   max-width: 70rem;
-  padding: 0 1rem;
+  padding: 0;
   margin: auto;
+}
+
+@media (min-width: 680px) {
+  .wrap {
+    padding: 0 1rem;
+  }
 }
 
 .go-to {
@@ -108,7 +120,7 @@ h2 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
@@ -116,6 +128,12 @@ h1.page-title {
   max-width: 76rem;
   padding-top: 1rem;
   margin: auto;
+}
+
+@media (min-width: 680px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
@@ -128,8 +146,10 @@ h2 {
   background: #f5f5f5;
 }
 
-h2.block-header {
-  transform: translateX(-5rem);
+@media (min-width: 1200px) {
+  h2.block-header {
+    transform: translateX(-5rem);
+  }
 }
 
 h2.tat {
@@ -160,7 +180,13 @@ p {
 
 .text-block .big {
   max-width: 68rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 420px) {
+  .text-block .big {
+    font-size: 1.4rem;
+  }
 }
 
 .text-block p {

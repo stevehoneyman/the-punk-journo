@@ -9,7 +9,7 @@ h2 {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	line-height: 1.2;
 
 	&.page-title {
@@ -17,6 +17,12 @@ h1 {
 		padding-top: 1rem;
 		margin:  auto;
 	}
+
+	
+	@include mq(680px) {
+		font-size: 2.5rem;
+	}
+
 }
 
 h2 {
@@ -28,9 +34,11 @@ h2 {
 	line-height: 1.2;
 	background: $off-white;
 	
-	&.block-header {
+	@include mq(1200px) {
+		&.block-header {
 		transform: translateX(-5rem);
-	}
+		}
+	} 
 
 	&.tat {
 		background: url('../images/tape-1.jpg');
@@ -64,7 +72,11 @@ p {
 .text-block {
 	.big {
 		max-width: 68rem;
-		font-size: 1.4rem;
+		font-size: 1.3rem;
+
+		@include mq(420px) {
+			font-size: 1.4rem;
+		}
 	}			
 
 	p {

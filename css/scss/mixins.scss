@@ -5,15 +5,23 @@
 --------------------------- */
 @mixin wrap-wide {
 	max-width: 78rem; // was 75rem
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding: 0;
 	margin: auto;
+
+	@include mq(680px) {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
 }
 
 @mixin wrap {
 	max-width: 70rem;
-	padding: 0 1rem;
+	padding: 0;
 	margin: auto;
+
+	@include mq(680px) {
+		padding: 0 1rem;
+	}
 }
 
 @mixin insulate {
