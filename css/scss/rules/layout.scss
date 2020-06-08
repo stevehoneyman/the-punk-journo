@@ -1,0 +1,26 @@
+/* layout:
+----------------------------------------------------------------------------- */
+main {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	background: $white;
+}
+
+section {
+	padding: 1rem 0 0 0; // add wrap to this to save extra div?
+
+	@include mq(680px) {
+		padding: 1rem 0 3rem 0;	
+	}
+}
+
+.recent-articles {
+	article:last-of-type {
+		margin-bottom: 3rem;
+	}
+}
+
+.insulate {
+	padding-top: 2rem;
+}

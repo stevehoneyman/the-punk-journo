@@ -1,0 +1,18 @@
+/* books
+----------------------------------------------------------------------------- */
+.books {
+	.books-grid {
+		@include mq(480px) {
+			 display: flex;
+	 		 flex-wrap: wrap;
+	 		}
+		}
+
+	.title {
+		@include playfair;
+		font-weight: bold;
+		color: $black-80;
+	}
+}
+
+		

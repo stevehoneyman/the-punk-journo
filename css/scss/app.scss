@@ -7,8 +7,8 @@
 @import 'tools/reset';
 @import 'tools/globals';
 
-@import 'pages/type';
-@import 'pages/layout';
+@import 'rules/type';
+@import 'rules/layout';
 
 @import 'page-sections/header';
 @import 'page-sections/banner';
@@ -16,7 +16,12 @@
 @import 'page-sections/text-block';
 @import 'page-sections/text-image-block';
 
-// @import 'elements/grids';
+@import 'elements/grids';
+@import 'pages/books';
+
+
+
+
 
 
 
