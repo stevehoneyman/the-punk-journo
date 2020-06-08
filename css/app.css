@@ -573,6 +573,32 @@ footer {
 
 /* books
 ----------------------------------------------------------------------------- */
+.books h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.books span {
+  display: block;
+  line-height: 1.2;
+}
+
+.books span.buy-outbound {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.books .book-full {
+  display: flex;
+}
+
+.books .book-full img {
+  max-width: 170px;
+  margin: 0 3rem 1rem 0;
+}
+
 @media (min-width: 480px) {
   .books .books-grid {
     display: flex;
@@ -580,8 +606,6 @@ footer {
   }
 }
 
-.books .title {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: bold;
-  color: #333333;
+.books .book {
+  max-width: 170px;
 }
