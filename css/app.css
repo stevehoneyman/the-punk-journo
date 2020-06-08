@@ -285,7 +285,7 @@ header .top nav ul a:hover {
 
 @media (min-width: 480px) {
   header .top nav ul {
-    width: 35rem;
+    width: 30rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
