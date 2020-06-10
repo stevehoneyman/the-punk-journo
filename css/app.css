@@ -129,10 +129,14 @@ h1 {
   line-height: 1.2;
 }
 
-h1.page-title {
+h1.home-title {
   max-width: 76rem;
   padding-top: 1rem;
   margin: auto;
+}
+
+h1.page-title {
+  transform: translateX(-1rem);
 }
 
 @media (min-width: 680px) {
@@ -256,6 +260,7 @@ header {
 }
 
 header .top {
+  position: relative;
   width: 1400px;
   padding-right: 1rem;
   margin: 0 auto;
@@ -264,8 +269,16 @@ header .top {
   align-items: center;
 }
 
+header .top .logo {
+  position: absolute;
+  left: -2rem;
+  border: 2px solid #333333;
+  background: #ffffff;
+}
+
 header .top nav ul {
   display: none;
+  margin-right: 2rem;
 }
 
 header .top nav ul a {
@@ -286,6 +299,7 @@ header .top nav ul a:hover {
 @media (min-width: 480px) {
   header .top nav ul {
     width: 30rem;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

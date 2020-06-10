@@ -13,10 +13,15 @@ h1 {
 	font-size: 1.75rem;
 	line-height: 1.2;
 
-	&.page-title {
+
+	&.home-title {
 		max-width: 76rem;
 		padding-top: 1rem;
 		margin:  auto;
+	}
+
+	&.page-title {
+		transform: translateX(-1rem)
 	}
 
 	@include mq(680px) {
@@ -36,8 +41,8 @@ h2 {
 	
 	@include mq(1200px) {
 		&.block-header {
-		padding: 0 1rem 0 .25rem;
-		transform: translateX(-5rem);
+			padding: 0 1rem 0 .25rem;
+			transform: translateX(-5rem);
 		}
 	} 
 

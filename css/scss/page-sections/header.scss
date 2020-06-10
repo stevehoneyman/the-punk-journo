@@ -1,6 +1,7 @@
 /* header
 ----------------------------------------------------------------------------- */
 header {
+
 	height: 75px;
 	box-shadow: 1px 1px 5px $light-grey;
 	background: $white;
@@ -12,6 +13,7 @@ header {
 	}
 
 	.top {
+		position: relative;
 		width: 1400px;
 		padding-right: 1rem;
 		margin: 0 auto;	
@@ -19,10 +21,18 @@ header {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-	
+
+		.logo {
+			position: absolute;
+			left: -$logo-left;
+			border: 2px solid $black-80;
+			background: $white;
+		}
+
 		nav {
 			ul {
 				display: none;
+				margin-right: $logo-left;
 				
 				a {
 					display: block;
@@ -41,8 +51,7 @@ header {
 				
 				@media (min-width: 480px) {
 					width: 30rem;
-					
-
+					margin-right: 2rem;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
