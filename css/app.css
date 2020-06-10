@@ -271,14 +271,20 @@ header .top {
 
 header .top .logo {
   position: absolute;
-  left: -2rem;
-  border: 2px solid #333333;
-  background: #ffffff;
+  left: -3rem;
+}
+
+header .top .logo a {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #333333;
+  text-decoration: none;
 }
 
 header .top nav ul {
   display: none;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 header .top nav ul a {
@@ -582,6 +588,25 @@ footer {
   }
   .grid:nth-of-type(4n+1) {
     margin-left: 0;
+  }
+}
+
+/* contact
+----------------------------------------------------------------------------- */
+label {
+  display: block;
+}
+
+input,
+textarea {
+  min-width: 300px;
+  height: 30px;
+}
+
+@media (max-width: 680px) {
+  input,
+  textarea {
+    width: 100%;
   }
 }
 

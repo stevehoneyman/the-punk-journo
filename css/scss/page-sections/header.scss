@@ -25,8 +25,14 @@ header {
 		.logo {
 			position: absolute;
 			left: -$logo-left;
-			border: 2px solid $black-80;
-			background: $white;
+			
+			a {
+				@include playfair;
+				font-weight: normal;
+				letter-spacing: 1px;
+				color: $black-80;
+				text-decoration: none;
+			}
 		}
 
 		nav {

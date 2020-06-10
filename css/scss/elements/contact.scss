@@ -1,0 +1,19 @@
+/* contact
+----------------------------------------------------------------------------- */
+label {
+	display: block;
+}
+
+
+input,
+	textarea {
+		min-width: 300px;
+		height: 30px;
+	}
+
+@media (max-width: 680px)  {
+	input,
+	textarea {
+		width: 100%;
+	}
+}
