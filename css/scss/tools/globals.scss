@@ -37,6 +37,16 @@
 	color: gold;
 }
 
+.link {
+	transition: 300ms;
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+		background: $black;
+	}
+}
+
 code {
 	display: block;
 	color: red;

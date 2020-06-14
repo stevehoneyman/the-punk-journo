@@ -37,7 +37,23 @@ h2 {
 	margin: 1rem 0;
 	font-size: 1.75rem;
 	line-height: 1.2;
-	background: $off-white;
+//	background: $off-white;
+
+	&:before {
+		position: absolute;
+		display: block;
+		content: '';
+		width: 220px;
+		height: 35px;
+	//	border-bottom: 3px solid $black-80;
+		background: url('../images/p-tat-5.jpg');
+		background-repeat: no-repeat;
+		mix-blend-mode: multiply;
+	//	transform: translateX(10px);
+		box-shadow: 5px 3px $off-white;
+		opacity: .9;
+
+	}
 	
 	@include mq(1200px) {
 		&.block-header {
@@ -59,6 +75,8 @@ h2 {
 		mix-blend-mode: multiply;
 	//	filter: grayscale(100%);	
 	}
+
+
 }
 	
 h3 {

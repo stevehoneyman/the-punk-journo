@@ -77,11 +77,20 @@ header {
 				.fa-search {
 					display: inline-block;
 					margin: 0 .25rem;
-					font-size: 1.65rem;
 					color: $black;
-			}
-		}	
+				}
+
+				.fa-linkedin,
+				.fa-twitter-square {
+					font-size: 1.65rem;
+				}
+
+				.fa-search {
+					padding-top: 3px;
+					font-size: 1.5rem;
+				}
+			}	
+		}
 	}
-}
 
 
