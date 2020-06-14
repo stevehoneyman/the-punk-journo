@@ -65,22 +65,20 @@ header {
 			}
 		}
 
-		span:first-of-type {
-			margin-left: 2rem;
-		}
-
 		.fa-linkedin,
-		.fa-twitter-square {
+		.fa-twitter-square,
+		.fa-search {
 			display: none;
-			margin: 0 .25rem;
-			font-size: 1.65rem;
-			color: $black;
-			}
+		}
 
 			@media (min-width: 680px) {
 				.fa-linkedin,
-				.fa-twitter-square {
+				.fa-twitter-square,
+				.fa-search {
 					display: inline-block;
+					margin: 0 .25rem;
+					font-size: 1.65rem;
+					color: $black;
 			}
 		}	
 	}

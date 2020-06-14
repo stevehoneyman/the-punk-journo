@@ -312,22 +312,20 @@ header .top nav ul a:hover {
   }
 }
 
-header .top span:first-of-type {
-  margin-left: 2rem;
-}
-
 header .top .fa-linkedin,
-header .top .fa-twitter-square {
+header .top .fa-twitter-square,
+header .top .fa-search {
   display: none;
-  margin: 0 .25rem;
-  font-size: 1.65rem;
-  color: #000000;
 }
 
 @media (min-width: 680px) {
   header .top .fa-linkedin,
-  header .top .fa-twitter-square {
+  header .top .fa-twitter-square,
+  header .top .fa-search {
     display: inline-block;
+    margin: 0 .25rem;
+    font-size: 1.65rem;
+    color: #000000;
   }
 }
 
