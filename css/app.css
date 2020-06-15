@@ -305,7 +305,7 @@ header .top .logo {
 
 @media (min-width: 680px) {
   header .top .logo {
-    top: 0;
+    top: -20px;
   }
 }
 
@@ -321,6 +321,10 @@ header .top .logo a {
   letter-spacing: 1px;
   color: #333333;
   text-decoration: none;
+}
+
+header .top .logo img {
+  width: 250px;
 }
 
 header .top nav ul {

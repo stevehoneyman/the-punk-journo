@@ -28,7 +28,7 @@ header {
 			left: 1rem;
 
 			@include mq(680px) { 
-				top: 0;
+				top: -20px;
 			}
 
 			@include mq(1200px) {
@@ -41,6 +41,10 @@ header {
 				letter-spacing: 1px;
 				color: $black-80;
 				text-decoration: none;
+			}
+
+			img {
+				width: 250px;
 			}
 		}
 
