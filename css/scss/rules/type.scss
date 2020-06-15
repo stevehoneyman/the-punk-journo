@@ -21,7 +21,11 @@ h1 {
 	}
 
 	&.page-title {
-		transform: translateX(-1rem)
+		padding: 1rem 0;
+
+		@include mq(1200px) {
+			transform: translateX(-1rem);
+		}
 	}
 
 	@include mq(680px) {
