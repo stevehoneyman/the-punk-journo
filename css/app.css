@@ -733,3 +733,11 @@ footer {
 .books .book {
   max-width: 170px;
 }
+
+.books-cv {
+  padding-bottom: 3rem;
+}
+
+.books-cv .books-cv-item {
+  margin-bottom: 1rem;
+}
