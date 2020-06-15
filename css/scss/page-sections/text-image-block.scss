@@ -7,7 +7,7 @@
 		img {
 			display: none;
 
-			@include mq(600px) {
+			@include mq(1000px) {
 				display: block;	
 				align-self: flex-start;
 				min-width: 250px; // tighten
@@ -102,7 +102,7 @@
 
 			// content
 			@include mq(800px) { 
-				margin-left: 2rem;
+				// margin-left: 2rem;
 
 				.text {
 					display: flex;
@@ -121,6 +121,11 @@
 				.go-to {
 						text-align: right;
 					}		
+				}
+
+			@include mq(1000px) { 
+				margin-left: 2rem;
+
 				}
 			}
 		}

@@ -408,7 +408,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   .text-image-block .container-full img {
     display: block;
     align-self: flex-start;
@@ -507,9 +507,6 @@ footer {
 }
 
 @media (min-width: 800px) {
-  .text-image-block .container-full .content {
-    margin-left: 2rem;
-  }
   .text-image-block .container-full .content .text {
     display: flex;
   }
@@ -524,6 +521,12 @@ footer {
   }
   .text-image-block .container-full .content .go-to {
     text-align: right;
+  }
+}
+
+@media (min-width: 1000px) {
+  .text-image-block .container-full .content {
+    margin-left: 2rem;
   }
 }
 
