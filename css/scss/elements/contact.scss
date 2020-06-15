@@ -1,50 +1,73 @@
 /* contact
 ----------------------------------------------------------------------------- */
-form {
-	padding-bottom: 3rem;
-	
-	label {
-		display: block;
-		margin: 1rem 0 0 0;
-		font-size: 1rem;
-	}
-
-	input,
-	textarea {
-			min-width: 300px;
-			height: 30px;
-			
-			// reset
-			border: 1px solid $light-grey;
-			outline: none;
-			-webkit-appearance:none;
-			-moz-appearance:none;
-		}
-
-	.submit {
-		margin-top: 2rem;
-	
-		input[type="submit"] {
+.contact {
+	.container {
+		@include mq(800px) {
 			display: flex;
-			padding: 1rem 0 2.25rem 0;
-			font-size: 1rem;
-			text-transform: uppercase;
-			letter-spacing: .5px;
-			background: $light-grey;
-			transition: 300ms;
-			
-			&:hover {
-				color: $white;
-				background: $black;
+
+			p {
+				width: 50%;
+				margin-right: 30px;	
 			}
 		}
+	}
 
-	}	
+	form {
+		width: 100%;
+		padding-bottom: 3rem;
 
-	@media (max-width: 680px)  {
+		@include mq(800px) {
+			width: 50%;
+		}
+
+		label {
+			display: block;
+			font-size: 1rem;
+		}
+
+		.email,
+			.message {
+				margin: 1rem 0 0 0;
+		}
+
 		input,
 		textarea {
-			width: 100%;
+				width: 100%;
+				min-width: 300px;
+				height: 30px;
+				
+				// reset
+				border: 1px solid $light-grey;
+				outline: none;
+				-webkit-appearance:none;
+				-moz-appearance:none;
+			}
+
+		.submit {
+			margin-top: 2rem;
+		
+			input[type="submit"] {
+				max-width: 50%;
+				padding: .5rem 0 1.75rem 0;
+				font-size: 1rem;
+				text-transform: uppercase;
+				letter-spacing: .5px;
+				background: $light-grey;
+				transition: 300ms;
+				
+				&:hover {
+					color: $white;
+					background: $black;
+				}
+			}
+
+		}	
+
+		@media (max-width: 680px)  {
+			input,
+			textarea {
+				width: 100%;
+			}
 		}
 	}
 }

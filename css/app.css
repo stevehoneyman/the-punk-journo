@@ -627,18 +627,40 @@ footer {
 
 /* contact
 ----------------------------------------------------------------------------- */
-form {
+@media (min-width: 800px) {
+  .contact .container {
+    display: flex;
+  }
+  .contact .container p {
+    width: 50%;
+    margin-right: 30px;
+  }
+}
+
+.contact form {
+  width: 100%;
   padding-bottom: 3rem;
 }
 
-form label {
+@media (min-width: 800px) {
+  .contact form {
+    width: 50%;
+  }
+}
+
+.contact form label {
   display: block;
-  margin: 1rem 0 0 0;
   font-size: 1rem;
 }
 
-form input,
-form textarea {
+.contact form .email,
+.contact form .message {
+  margin: 1rem 0 0 0;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
   min-width: 300px;
   height: 30px;
   border: 1px solid #cccccc;
@@ -647,13 +669,13 @@ form textarea {
   -moz-appearance: none;
 }
 
-form .submit {
+.contact form .submit {
   margin-top: 2rem;
 }
 
-form .submit input[type="submit"] {
-  display: flex;
-  padding: 1rem 0 2.25rem 0;
+.contact form .submit input[type="submit"] {
+  max-width: 50%;
+  padding: .5rem 0 1.75rem 0;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .5px;
@@ -661,14 +683,14 @@ form .submit input[type="submit"] {
   transition: 300ms;
 }
 
-form .submit input[type="submit"]:hover {
+.contact form .submit input[type="submit"]:hover {
   color: #ffffff;
   background: #000000;
 }
 
 @media (max-width: 680px) {
-  form input,
-  form textarea {
+  .contact form input,
+  .contact form textarea {
     width: 100%;
   }
 }
