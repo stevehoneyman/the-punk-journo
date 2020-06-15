@@ -299,7 +299,15 @@ header .top {
 
 header .top .logo {
   position: absolute;
-  left: -3rem;
+  top: 1.5rem;
+  left: 1rem;
+}
+
+@media (min-width: 1200px) {
+  header .top .logo {
+    top: 0;
+    left: -3rem;
+  }
 }
 
 header .top .logo a {
@@ -412,6 +420,10 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: 0;
+}
+
+.text-image-block .container-full .content .stars {
+  margin: 1rem 0;
 }
 
 .text-image-block .container-full .content .text h2 {

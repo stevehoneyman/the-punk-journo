@@ -24,7 +24,13 @@ header {
 
 		.logo {
 			position: absolute;
-			left: -$logo-left;
+			top: 1.5rem;
+			left: 1rem;
+
+			@include mq(1200px) {
+				top: 0;
+				left: -$logo-left;
+			}
 			
 			a {
 				@include playfair;
