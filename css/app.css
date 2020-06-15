@@ -301,6 +301,7 @@ header .top .logo {
   position: absolute;
   top: 1.5rem;
   left: 1rem;
+  box-shadow: 4px 4px #000000;
 }
 
 @media (min-width: 680px) {
