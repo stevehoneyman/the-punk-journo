@@ -27,8 +27,11 @@ header {
 			top: 1.5rem;
 			left: 1rem;
 
-			@include mq(1200px) {
+			@include mq(680px) { 
 				top: 0;
+			}
+
+			@include mq(1200px) {
 				left: -$logo-left;
 			}
 			
@@ -61,7 +64,7 @@ header {
 					}
 				}
 				
-				@media (min-width: 480px) {
+				@media (min-width: 1000px) {
 					width: 30rem;
 					margin-right: 2rem;
 					display: flex;

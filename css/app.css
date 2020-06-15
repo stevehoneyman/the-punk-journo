@@ -303,9 +303,14 @@ header .top .logo {
   left: 1rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 680px) {
   header .top .logo {
     top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .top .logo {
     left: -3rem;
   }
 }
@@ -338,7 +343,7 @@ header .top nav ul a:hover {
   color: #000000;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1000px) {
   header .top nav ul {
     width: 30rem;
     margin-right: 2rem;
