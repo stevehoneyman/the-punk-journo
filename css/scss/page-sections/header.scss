@@ -24,8 +24,9 @@ header {
 
 		.logo {
 			position: absolute;
-			top: 1.5rem;
+			top: 1rem;
 			left: 1rem;
+			width: 175px;
 		//	box-shadow: 3px 3px $black-70;
 
 			@include mq(680px) { 

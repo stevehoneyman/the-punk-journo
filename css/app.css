@@ -299,8 +299,9 @@ header .top {
 
 header .top .logo {
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
   left: 1rem;
+  width: 175px;
 }
 
 @media (min-width: 680px) {
