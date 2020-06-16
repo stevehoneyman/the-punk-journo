@@ -312,6 +312,7 @@ header .top .logo {
 
 @media (min-width: 1200px) {
   header .top .logo {
+    width: auto;
     left: -3rem;
   }
 }
