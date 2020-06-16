@@ -26,7 +26,7 @@ header {
 			position: absolute;
 			top: 1.5rem;
 			left: 1rem;
-			box-shadow: 3px 3px $black-70;
+		//	box-shadow: 3px 3px $black-70;
 
 			@include mq(680px) { 
 				top: -20px;
