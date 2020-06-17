@@ -306,7 +306,7 @@ header .top .logo {
 
 @media (min-width: 680px) {
   header .top .logo {
-    top: -20px;
+    top: 0;
   }
 }
 

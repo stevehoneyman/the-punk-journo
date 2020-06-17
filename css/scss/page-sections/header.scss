@@ -30,7 +30,7 @@ header {
 		//	box-shadow: 3px 3px $black-70;
 
 			@include mq(680px) { 
-				top: -20px;
+				top: 0;
 			}
 
 			@include mq(1200px) {
