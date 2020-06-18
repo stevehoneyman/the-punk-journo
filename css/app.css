@@ -725,8 +725,13 @@ footer {
 /* books
 ----------------------------------------------------------------------------- */
 .books .book-full img {
-  max-width: 170px;
   margin: 0 3rem 1rem 0;
+}
+
+@media (min-width: 600px) {
+  .books .book-full img {
+    max-width: 170px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -753,6 +758,19 @@ footer {
 .books span.buy-outbound {
   margin-bottom: 1rem;
   font-weight: bold;
+}
+
+@media (min-width: 480px) {
+  .books .books-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .books .books-grid .book {
+    max-width: 170px;
+  }
 }
 
 .books-cv {
