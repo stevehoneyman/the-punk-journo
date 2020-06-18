@@ -1,12 +1,25 @@
 /* books
 ----------------------------------------------------------------------------- */
 .books {
+	.book-full {
+		img {
+			max-width: 170px;
+			margin: 0 3rem 1rem 0;
+		}
+
+		@include mq(600px) {
+			display: flex;
+		}
+	}	
+
 	h3 {
-	
 		@include playfair;
 		font-size: 1.25rem;
 		font-weight: bold;
-		color: $black-80;
+	}
+
+	.description {
+		display: none;
 	}
 
 	span {
@@ -19,24 +32,11 @@
 		}
 	}
 
-	.book-full {
-		display: flex;
-		
-		img {
-			max-width: 170px;
-			margin: 0 3rem 1rem 0;
-		}
-	}	
-	
 	.books-grid {
 		@include mq(480px) {
-			display: flex;
-	 		flex-wrap: wrap;
+		//	display: flex;
+	 	//	flex-wrap: wrap;
 	 	}
-	}
-
-	.book {
-		max-width: 170px;
 	}
 }
 
