@@ -1,8 +1,7 @@
 /* header
 ----------------------------------------------------------------------------- */
 header {
-
-	height: 75px;
+	min-height: 75px;
 	box-shadow: 1px 1px 5px $light-grey;
 	background: $white;
 
@@ -14,13 +13,17 @@ header {
 
 	.top {
 		position: relative;
-		width: 1400px;
+		width: 100%;
+		max-width: 1400px;
 		padding-right: 1rem;
 		margin: 0 auto;	
 		
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
+
+		@include mq(1001px) {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
 
 		.logo {
 			position: absolute;
@@ -51,9 +54,22 @@ header {
 			}
 		}
 
-		nav {
-			ul {
+		.menu {
+			position: absolute;
+			top: .25rem;
+			right: 1rem;
+			color: red;
+
+			@include mq(1000px) {
 				display: none;
+			}
+		}
+
+		.main-nav {
+			display: none;
+			
+			ul {
+				padding: 3rem 1rem;
 				margin-right: $logo-left;
 				
 				a {
@@ -63,6 +79,7 @@ header {
 					text-transform: uppercase;
 					font-weight: 400;
 					color: $light-grey;
+					color: red;
 					text-decoration: none;
 					transition: 300ms;
 				
@@ -71,7 +88,8 @@ header {
 					}
 				}
 				
-				@media (min-width: 1000px) {
+				@media (min-width: 1001px) {
+					padding: 0;
 					width: 20rem;
 					margin-right: 2rem;
 					display: flex;
@@ -79,14 +97,28 @@ header {
 					justify-content: space-between;
 				}
 			}
-		}
+
+			&.show {
+				display: block;
+			}
+
+			@include mq(1001px) {
+				//height: 75px;
+				display: block;
+			}
+		}	
 
 		.search {
+			display: none;
 			padding: .25rem;
 			border: 1px solid $light-grey;
 			color:  $light-grey; 
 			-webkit-appearance: none;
 			-moz-appearance: none;
+
+			@include mq(1001px) {
+				display: block;
+			}
 		}
 
 		.fa-linkedin,
@@ -95,7 +127,7 @@ header {
 			display: none;
 		}
 
-			@media (min-width: 680px) {
+			@media (min-width: 1001px) {
 				.fa-linkedin,
 				.fa-twitter-square,
 				.fa-search {

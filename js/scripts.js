@@ -8,9 +8,13 @@ jQuery(document).ready(function($){
 	------------------------------------------------------------------------- */
 	// controls for main nav
 	// toggle visibility
-	$('.navicon').on('click', function() {
-		// console.log('click fired...')
-		$(this).next().toggleClass('show');
-	});
-	
-}); // close doc ready
+	// $('.navicon').on('click', function() {
+	// 	// console.log('click fired...')
+	// 	$(this).next().toggleClass('show');
+	// });
+
+	$('.menu').on('click', function() {
+			console.log('yep...');
+			$(this).next().toggleClass('show');
+		});
+	}); // close doc ready

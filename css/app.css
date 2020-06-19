@@ -277,7 +277,7 @@ section {
 /* header
 ----------------------------------------------------------------------------- */
 header {
-  height: 75px;
+  min-height: 75px;
   box-shadow: 1px 1px 5px #cccccc;
   background: #ffffff;
 }
@@ -292,12 +292,18 @@ header {
 
 header .top {
   position: relative;
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   padding-right: 1rem;
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+}
+
+@media (min-width: 1001px) {
+  header .top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 header .top .logo {
@@ -332,28 +338,47 @@ header .top .logo img {
   width: 250px;
 }
 
-header .top nav ul {
+header .top .menu {
+  position: absolute;
+  top: .25rem;
+  right: 1rem;
+  color: red;
+}
+
+@media (min-width: 1000px) {
+  header .top .menu {
+    display: none;
+  }
+}
+
+header .top .main-nav {
   display: none;
+}
+
+header .top .main-nav ul {
+  padding: 3rem 1rem;
   margin-right: 3rem;
 }
 
-header .top nav ul a {
+header .top .main-nav ul a {
   display: block;
   padding: .25rem 0;
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 400;
   color: #cccccc;
+  color: red;
   text-decoration: none;
   transition: 300ms;
 }
 
-header .top nav ul a:hover {
+header .top .main-nav ul a:hover {
   color: #000000;
 }
 
-@media (min-width: 1000px) {
-  header .top nav ul {
+@media (min-width: 1001px) {
+  header .top .main-nav ul {
+    padding: 0;
     width: 20rem;
     margin-right: 2rem;
     display: flex;
@@ -362,12 +387,29 @@ header .top nav ul a:hover {
   }
 }
 
+header .top .main-nav.show {
+  display: block;
+}
+
+@media (min-width: 1001px) {
+  header .top .main-nav {
+    display: block;
+  }
+}
+
 header .top .search {
+  display: none;
   padding: .25rem;
   border: 1px solid #cccccc;
   color: #cccccc;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+@media (min-width: 1001px) {
+  header .top .search {
+    display: block;
+  }
 }
 
 header .top .fa-linkedin,
@@ -376,7 +418,7 @@ header .top .fa-search {
   display: none;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 1001px) {
   header .top .fa-linkedin,
   header .top .fa-twitter-square,
   header .top .fa-search {
