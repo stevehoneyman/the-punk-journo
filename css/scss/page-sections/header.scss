@@ -1,16 +1,17 @@
 /* header
 ----------------------------------------------------------------------------- */
 header {
+	position: fixed;
+	width: 100%;
 	min-height: 75px;
 	padding-top: 1rem;
 	box-shadow: 1px 1px 5px $light-grey;
 	background: $white;
+	z-index: 1000;
 
 	// display: flex;
 	// 	align-items: center;
 	// 	justify-content: flex-end;
-
-	
 
 	.top {
 		position: relative;
