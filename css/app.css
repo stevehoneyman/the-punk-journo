@@ -277,13 +277,18 @@ section {
 /* header
 ----------------------------------------------------------------------------- */
 header {
-  position: fixed;
   width: 100%;
   min-height: 75px;
   padding-top: 1rem;
   box-shadow: 1px 1px 5px #cccccc;
   background: #ffffff;
-  z-index: 1000;
+}
+
+@media (min-width: 1001px) {
+  header {
+    position: fixed;
+    z-index: 1000;
+  }
 }
 
 header .top {
