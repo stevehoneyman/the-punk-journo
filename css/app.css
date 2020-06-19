@@ -278,16 +278,9 @@ section {
 ----------------------------------------------------------------------------- */
 header {
   min-height: 75px;
+  padding-top: 1rem;
   box-shadow: 1px 1px 5px #cccccc;
   background: #ffffff;
-}
-
-@media (min-width: 680px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
 }
 
 header .top {
@@ -308,14 +301,13 @@ header .top {
 
 header .top .logo {
   position: absolute;
-  top: 1rem;
   left: 1rem;
   width: 175px;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 1001px) {
   header .top .logo {
-    top: 0;
+    top: 3px;
   }
 }
 
@@ -340,9 +332,12 @@ header .top .logo img {
 
 header .top .menu {
   position: absolute;
-  top: .25rem;
   right: 1rem;
-  color: red;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #333333;
+  background: transparent;
 }
 
 @media (min-width: 1000px) {
@@ -367,7 +362,6 @@ header .top .main-nav ul a {
   text-transform: uppercase;
   font-weight: 400;
   color: #cccccc;
-  color: red;
   text-decoration: none;
   transition: 300ms;
 }

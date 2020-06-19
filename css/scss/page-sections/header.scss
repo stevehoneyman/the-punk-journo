@@ -2,14 +2,15 @@
 ----------------------------------------------------------------------------- */
 header {
 	min-height: 75px;
+	padding-top: 1rem;
 	box-shadow: 1px 1px 5px $light-grey;
 	background: $white;
 
-	@include mq (680px) {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-	}
+	// display: flex;
+	// 	align-items: center;
+	// 	justify-content: flex-end;
+
+	
 
 	.top {
 		position: relative;
@@ -27,14 +28,15 @@ header {
 
 		.logo {
 			position: absolute;
-			top: 1rem;
+		//	top: -14px;
 			left: 1rem;
 			width: 175px;
 		//	box-shadow: 3px 3px $black-70;
 
-			@include mq(680px) { 
-				top: 0;
+			@include mq(1001px) {
+				top: 3px;
 			}
+
 
 			@include mq(1200px) {
 				width: auto;
@@ -56,9 +58,13 @@ header {
 
 		.menu {
 			position: absolute;
-			top: .25rem;
+		//	top: -14px;
 			right: 1rem;
-			color: red;
+			outline: none;
+			border: none;
+			font-size: 1rem;
+			color: $black-80;
+			background: transparent;
 
 			@include mq(1000px) {
 				display: none;
@@ -79,7 +85,6 @@ header {
 					text-transform: uppercase;
 					font-weight: 400;
 					color: $light-grey;
-					color: red;
 					text-decoration: none;
 					transition: 300ms;
 				
