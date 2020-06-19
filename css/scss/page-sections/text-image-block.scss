@@ -1,6 +1,13 @@
 /* text-image-block:
 ----------------------------------------------------------------------------- */
 .text-image-block {
+	.intro {
+
+		@include mq(1000px) {
+			margin-right: 20%;
+		}
+	}
+
 	.container-full {
 		display: flex;
 	

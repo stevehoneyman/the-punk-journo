@@ -1,0 +1,52 @@
+/* books
+----------------------------------------------------------------------------- */
+
+	.feature-full {
+		img {
+			margin: 0 3rem 1rem 0;
+
+			@include mq(600px) {
+				max-width: 170px;
+			}
+		}
+
+		@include mq(600px) {
+			display: flex;
+		}
+	}	
+
+	h3 {
+		@include playfair;
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	.description {
+		display: none;
+	}
+
+	span {
+		display: block;
+		line-height: 1.2;
+	
+		&.buy-outbound {
+			margin-bottom: 1rem;
+			font-weight: bold;
+		}
+	}
+
+	.feature-grid {
+		@include mq(480px) {
+			display: flex;
+	 		flex-wrap: wrap;
+	 	}
+
+	 	@include mq(1200px) {
+			.feature-thumb {
+				max-width: 170px;
+			}
+	 	}
+	}
+
+
+		
