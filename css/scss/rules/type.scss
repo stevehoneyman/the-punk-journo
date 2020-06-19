@@ -41,7 +41,7 @@ h2 {
 	margin: 1rem 0;
 	font-size: 1.75rem;
 	line-height: 1.2;
-	background: $off-white;
+//	background: $off-white;
 //	border-bottom: 3px solid $black-80;  works nicely...
 	// background: url('../images/p-tat-5.jpg');
 	// background-size: cover;
@@ -59,7 +59,7 @@ h2 {
 		background-repeat: no-repeat;
 		mix-blend-mode: multiply;
 	//	transform: translateX(10px);
-		box-shadow: 5px 3px $off-white;
+	//	box-shadow: 5px 3px $off-white;
 		opacity: .9;
 
 	}
@@ -89,7 +89,7 @@ h2 {
 }
 	
 h3 {
-	margin-bottom: .5rem;
+//	margin-bottom: .5rem;
 	@include playfair;
 	font-size: 1.125rem;
 	font-weight: normal;
