@@ -261,8 +261,13 @@ section {
   }
 }
 
-.recent-articles article:last-of-type {
-  margin-bottom: 3rem;
+.recent-articles li {
+  margin-bottom: .5rem;
+}
+
+.recent-articles .go-to {
+  margin-top: 3rem;
+  font-weight: bold;
 }
 
 .insulate {
@@ -355,6 +360,14 @@ header .top nav ul a:hover {
     align-items: center;
     justify-content: space-between;
   }
+}
+
+header .top .search {
+  padding: .25rem;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 header .top .fa-linkedin,

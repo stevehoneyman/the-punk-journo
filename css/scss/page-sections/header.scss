@@ -81,6 +81,14 @@ header {
 			}
 		}
 
+		.search {
+			padding: .25rem;
+			border: 1px solid $light-grey;
+			color:  $light-grey; 
+			-webkit-appearance: none;
+			-moz-appearance: none;
+		}
+
 		.fa-linkedin,
 		.fa-twitter-square,
 		.fa-search {
