@@ -119,7 +119,7 @@ ul, li {
   background: #000000;
 }
 
-.fuck-knows {
+.lazy {
   margin-top: 3rem;
 }
 
@@ -261,6 +261,10 @@ p {
   .text-block p {
     line-height: 1.6;
   }
+}
+
+.additional-links a {
+  color: #444444;
 }
 
 /* layout:
