@@ -341,11 +341,30 @@ header .top .logo img {
 header .top .menu {
   position: absolute;
   right: 1rem;
+  width: 30px;
+  height: 30px;
   outline: none;
   border: none;
   font-size: 1rem;
   color: #333333;
-  background: transparent;
+  background: red;
+}
+
+header .top .menu i {
+  position: absolute;
+  right: 4px;
+  top: 16px;
+  width: 24px;
+  height: 2px;
+  background: #333333;
+}
+
+header .top .menu i:first-of-type {
+  top: 10px;
+}
+
+header .top .menu i:last-of-type {
+  top: 22px;
 }
 
 @media (min-width: 1000px) {

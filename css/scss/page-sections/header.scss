@@ -64,18 +64,39 @@ header {
 
 		.menu {
 			position: absolute;
-		//	top: -14px;
 			right: 1rem;
+			width: 30px;
+			height: 30px;
 			outline: none;
 			border: none;
 			font-size: 1rem;
 			color: $black-80;
-			background: transparent;
+			background: red;
+
+			i {
+				position:absolute;
+				right: 4px;
+				top: 16px;
+				width: 24px;
+				height: 2px;
+				background: $black-80;
+			}
+
+				i:first-of-type {
+				top: 10px;
+			}	
+
+				i:last-of-type {
+				top: 22px;
+			}
+
 
 			@include mq(1000px) {
 				display: none;
 			}
 		}
+
+		
 
 		.main-nav {
 			display: none;
