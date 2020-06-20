@@ -64,30 +64,32 @@ header {
 
 		.menu {
 			position: absolute;
+			top: 0;
 			right: 1rem;
 			width: 30px;
-			height: 30px;
+			height: 40px;
 			outline: none;
 			border: none;
 			font-size: 1rem;
 			color: $black-80;
-			background: red;
+			background: transparent;
+
+
+			i:first-of-type {
+				top: 4px;
+			}	
 
 			i {
 				position:absolute;
 				right: 4px;
-				top: 16px;
-				width: 24px;
-				height: 2px;
+				top: 12px;
+				width: 30px;
+				height: 3px;
 				background: $black-80;
 			}
 
-				i:first-of-type {
-				top: 10px;
-			}	
-
-				i:last-of-type {
-				top: 22px;
+			i:last-of-type {
+				top: 20px;
 			}
 
 
