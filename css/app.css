@@ -166,6 +166,10 @@ ul, li {
   }
 }
 
+.additional-links li {
+  margin-bottom: .5rem;
+}
+
 code {
   display: block;
   color: red;
