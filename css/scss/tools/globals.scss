@@ -67,6 +67,31 @@
 	}
 }
 
+.articles-grid {
+	display: none;
+	margin-top: 1rem;
+
+	@include mq(680px) {
+		display: flex;
+	}
+}
+
+.white-holder {
+	width: 100%;
+//	padding: .5rem;
+	border: 1px solid #ccc;
+	background: $off-white;
+
+	@include mq(1001px) {
+		width: calc(25% - 22.5px);
+		margin-left: 30px;
+
+		&:nth-of-type(4n+1) {
+		//	border: 1px solid red;	
+			margin-left: 0;
+		}
+	}
+}
 
 code {
 	display: block;

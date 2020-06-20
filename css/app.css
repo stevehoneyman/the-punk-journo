@@ -139,6 +139,33 @@ ul, li {
   height: 100%;
 }
 
+.articles-grid {
+  display: none;
+  margin-top: 1rem;
+}
+
+@media (min-width: 680px) {
+  .articles-grid {
+    display: flex;
+  }
+}
+
+.white-holder {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+}
+
+@media (min-width: 1001px) {
+  .white-holder {
+    width: calc(25% - 22.5px);
+    margin-left: 30px;
+  }
+  .white-holder:nth-of-type(4n+1) {
+    margin-left: 0;
+  }
+}
+
 code {
   display: block;
   color: red;
