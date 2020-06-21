@@ -109,6 +109,9 @@
 
 strong {
 	color: $black-80;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	@include playfair;
 }
 
 .story {
@@ -119,11 +122,12 @@ strong {
 .sidebar {
 	width: calc(25% - 2rem);
 	margin-right: 2rem;
-	border-left: 1px solid $light-grey;
+	border-left: 1px solid #eeeeee;
 
 	h2 {
 		margin-top: 0;
 		margin-left: 1rem;
+		font-size: 1.5rem;
 	//	@include opensans;
 	}
 } 
