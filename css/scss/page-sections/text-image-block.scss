@@ -145,13 +145,15 @@
 		article {
 			width: 100%;
 			min-height: 250px;
+			border: 1px solid #eeeeee;
+			margin-bottom: 1rem;
 
 			h3 {
 				min-height: 70px;
 				padding: .25rem;
 				font-weight: bold;
-				color: $white;
-				background: $black-80;
+				color: $black-80;
+			//	background: $black-80;
 			}
 
 			img {
@@ -187,9 +189,9 @@
 			width: 100%;
 			min-height: 250px;
 			padding: .25rem;
-		//	border: 1px solid $light-grey;
+			border: 1px solid #eeeeee;
 			margin-bottom: .5rem;	
-			box-shadow: 3px 4px $off-white;	
+		//	box-shadow: 3px 4px $off-white;	
 
 			h3 {
 				font-weight: bold;
