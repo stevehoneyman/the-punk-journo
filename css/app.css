@@ -366,7 +366,7 @@ header {
   width: 100%;
   min-height: 75px;
   padding-top: 1rem;
-  box-shadow: 1px 1px 5px #eeeeee;
+  box-shadow: 1px 1px 5px #cccccc;
   background: #ffffff;
 }
 
@@ -475,7 +475,7 @@ header .top .main-nav ul a {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 400;
-  color: #eeeeee;
+  color: #cccccc;
   text-decoration: none;
   transition: 300ms;
 }
@@ -509,7 +509,7 @@ header .top .search {
   display: none;
   padding: .25rem;
   border: 1px solid #eeeeee;
-  color: #eeeeee;
+  color: #cccccc;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -857,7 +857,7 @@ footer {
   width: 100%;
   min-width: 300px;
   height: 30px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #cccccc;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -873,7 +873,7 @@ footer {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .5px;
-  background: #eeeeee;
+  background: #cccccc;
   transition: 300ms;
 }
 
