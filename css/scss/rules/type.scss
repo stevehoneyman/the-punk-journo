@@ -1,6 +1,5 @@
 /* typography
 ----------------------------------------------------------------------------- */
-
 h1, 
 h2,
 blockquote {
@@ -14,7 +13,7 @@ h1 {
 	line-height: 1.2;
 
 
-	&.home-title {
+	&.wrap-title {
 		max-width: 76rem;
 		padding-top: 1rem;
 		margin:  auto;
@@ -31,7 +30,6 @@ h1 {
 	@include mq(680px) {
 		font-size: 2.5rem;
 	}
-
 }
 
 h2 {
@@ -41,25 +39,16 @@ h2 {
 	margin: 1rem 0;
 	font-size: 1.75rem;
 	line-height: 1.2;
-//	background: $off-white;
-//	border-bottom: 3px solid $black-80;  works nicely...
-	// background: url('../images/p-tat-5.jpg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
 
 	&:before {
 		position: absolute;
 		display: block;
 		content: '';
-	//	width: 220px;
-	//	height: 35px;
 		border-bottom: 3px solid $black-80;
 		background: url('../images/p-tat-5.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		mix-blend-mode: multiply;
-	//	transform: translateX(10px);
-	//	box-shadow: 5px 3px $off-white;
 		opacity: .9;
 
 	}
@@ -74,7 +63,6 @@ h2 {
 	&.tat {
 		background: url('../images/tape-1.jpg');
 		background-repeat: no-repeat;
-	//	mix-blend-mode: multiply;
 		filter: grayscale(100%);
 	}
 
@@ -82,14 +70,10 @@ h2 {
 		background: url('../images/underline-1.jpg');
 		background-repeat: no-repeat;
 		mix-blend-mode: multiply;
-	//	filter: grayscale(100%);	
 	}
-
-
 }
 	
 h3 {
-//	margin-bottom: .5rem;
 	@include playfair;
 	font-size: 1.125rem;
 	font-weight: normal;
@@ -108,7 +92,7 @@ p {
 }
 
 .text-block {
-	.big {
+	.intro-text {
 		max-width: 68rem;
 		font-size: 1.125rem;
 		line-height: 1.4;
@@ -127,7 +111,6 @@ p {
 		}
 	}
 } 
-
 
 .additional-links {
 	a {

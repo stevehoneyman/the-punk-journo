@@ -97,7 +97,7 @@ ul, li {
   background: #000000;
 }
 
-.no-top {
+.no-padding-top {
   padding-top: 0;
 }
 
@@ -119,7 +119,7 @@ ul, li {
   background: #000000;
 }
 
-.lazy {
+.video-title {
   margin-top: 3rem;
 }
 
@@ -170,42 +170,6 @@ ul, li {
   margin-bottom: .5rem;
 }
 
-.article {
-  display: flex;
-}
-
-.article-title {
-  margin-bottom: 2rem !important;
-}
-
-strong {
-  color: #333333;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  font-family: 'Playfair Display', sans-serif;
-}
-
-.story {
-  max-width: 50rem;
-}
-
-.sidebar {
-  width: calc(25% - 2rem);
-  margin-right: 2rem;
-  border-left: 1px solid #eeeeee;
-}
-
-.sidebar h2 {
-  margin-top: 0;
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
-
-code {
-  display: block;
-  color: red;
-}
-
 /* typography
 ----------------------------------------------------------------------------- */
 h1,
@@ -221,7 +185,7 @@ h1 {
   line-height: 1.2;
 }
 
-h1.home-title {
+h1.wrap-title {
   max-width: 76rem;
   padding-top: 1rem;
   margin: auto;
@@ -301,14 +265,14 @@ p {
   line-height: 1.5;
 }
 
-.text-block .big {
+.text-block .intro-text {
   max-width: 68rem;
   font-size: 1.125rem;
   line-height: 1.4;
 }
 
 @media (min-width: 420px) {
-  .text-block .big {
+  .text-block .intro-text {
     font-size: 1.4rem;
     line-height: 1.6;
   }
@@ -373,11 +337,11 @@ header {
 @media (min-width: 1001px) {
   header {
     position: fixed;
-    z-index: 1000;
+    z-index: 5000;
   }
 }
 
-header .top {
+header .header-inner {
   position: relative;
   width: 100%;
   max-width: 1400px;
@@ -386,33 +350,33 @@ header .top {
 }
 
 @media (min-width: 1001px) {
-  header .top {
+  header .header-inner {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
 }
 
-header .top .logo {
+header .header-inner .logo {
   position: absolute;
   left: 1rem;
   width: 175px;
 }
 
 @media (min-width: 1001px) {
-  header .top .logo {
+  header .header-inner .logo {
     top: 3px;
   }
 }
 
 @media (min-width: 1200px) {
-  header .top .logo {
+  header .header-inner .logo {
     width: auto;
     left: -3rem;
   }
 }
 
-header .top .logo a {
+header .header-inner .logo a {
   font-family: 'Playfair Display', sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
@@ -420,11 +384,11 @@ header .top .logo a {
   text-decoration: none;
 }
 
-header .top .logo img {
+header .header-inner .logo img {
   width: 250px;
 }
 
-header .top .menu {
+header .header-inner .menu {
   position: absolute;
   top: 0;
   right: 1rem;
@@ -437,11 +401,11 @@ header .top .menu {
   background: transparent;
 }
 
-header .top .menu i:first-of-type {
+header .header-inner .menu i:first-of-type {
   top: 4px;
 }
 
-header .top .menu i {
+header .header-inner .menu i {
   position: absolute;
   right: 4px;
   top: 12px;
@@ -450,26 +414,26 @@ header .top .menu i {
   background: #333333;
 }
 
-header .top .menu i:last-of-type {
+header .header-inner .menu i:last-of-type {
   top: 20px;
 }
 
 @media (min-width: 1000px) {
-  header .top .menu {
+  header .header-inner .menu {
     display: none;
   }
 }
 
-header .top .main-nav {
+header .header-inner .main-nav {
   display: none;
 }
 
-header .top .main-nav ul {
+header .header-inner .main-nav ul {
   padding: 3rem 1rem;
   margin-right: 3rem;
 }
 
-header .top .main-nav ul a {
+header .header-inner .main-nav ul a {
   display: block;
   padding: .25rem 0;
   font-size: 1.1rem;
@@ -480,12 +444,12 @@ header .top .main-nav ul a {
   transition: 300ms;
 }
 
-header .top .main-nav ul a:hover {
+header .header-inner .main-nav ul a:hover {
   color: #000000;
 }
 
 @media (min-width: 1001px) {
-  header .top .main-nav ul {
+  header .header-inner .main-nav ul {
     padding: 0;
     width: 20rem;
     margin-right: 2rem;
@@ -495,17 +459,17 @@ header .top .main-nav ul a:hover {
   }
 }
 
-header .top .main-nav.show {
+header .header-inner .main-nav.show {
   display: block;
 }
 
 @media (min-width: 1001px) {
-  header .top .main-nav {
+  header .header-inner .main-nav {
     display: block;
   }
 }
 
-header .top .search {
+header .header-inner .search {
   display: none;
   padding: .25rem;
   border: 1px solid #eeeeee;
@@ -515,30 +479,30 @@ header .top .search {
 }
 
 @media (min-width: 1001px) {
-  header .top .search {
+  header .header-inner .search {
     display: block;
   }
 }
 
-header .top .fa-linkedin,
-header .top .fa-twitter-square,
-header .top .fa-search {
+header .header-inner .fa-linkedin,
+header .header-inner .fa-twitter-square,
+header .header-inner .fa-search {
   display: none;
 }
 
 @media (min-width: 1001px) {
-  header .top .fa-linkedin,
-  header .top .fa-twitter-square,
-  header .top .fa-search {
+  header .header-inner .fa-linkedin,
+  header .header-inner .fa-twitter-square,
+  header .header-inner .fa-search {
     display: inline-block;
     margin: 0 .25rem;
     color: #000000;
   }
-  header .top .fa-linkedin,
-  header .top .fa-twitter-square {
+  header .header-inner .fa-linkedin,
+  header .header-inner .fa-twitter-square {
     font-size: 1.65rem;
   }
-  header .top .fa-search {
+  header .header-inner .fa-search {
     padding-top: 3px;
     font-size: 1.5rem;
   }
@@ -897,55 +861,37 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* books
+/* single article page
 ----------------------------------------------------------------------------- */
-.feature-full img {
-  margin: 0 3rem 1rem 0;
+.article-wrapper {
+  display: flex;
 }
 
-@media (min-width: 600px) {
-  .feature-full img {
-    max-width: 170px;
-  }
+.article-content {
+  max-width: 50rem;
 }
 
-@media (min-width: 600px) {
-  .feature-full {
-    display: flex;
-  }
+.article-title {
+  margin-bottom: 2rem !important;
 }
 
-h3 {
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.description {
-  display: none;
-}
-
-span {
-  display: block;
+strong {
+  color: #333333;
+  font-size: 1.5rem;
   line-height: 1.2;
+  font-family: 'Playfair Display', sans-serif;
 }
 
-span.buy-outbound {
-  margin-bottom: 1rem;
-  font-weight: bold;
+.sidebar {
+  width: calc(25% - 2rem);
+  margin-right: 2rem;
+  border-left: 1px solid #eeeeee;
 }
 
-@media (min-width: 480px) {
-  .feature-grid {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1200px) {
-  .feature-grid .feature-thumb {
-    max-width: 170px;
-  }
+.sidebar h2 {
+  margin-top: 0;
+  margin-left: 1rem;
+  font-size: 1.5rem;
 }
 
 /* books

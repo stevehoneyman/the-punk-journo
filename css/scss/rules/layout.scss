@@ -8,7 +8,7 @@ main {
 }
 
 section {
-	padding: 1rem 0 0 0; // add wrap to this to save extra div?
+	padding: 1rem 0 0 0; 
 
 	@include mq(680px) {
 		padding: 1rem 0 3rem 0;	

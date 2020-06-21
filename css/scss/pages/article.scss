@@ -1,0 +1,32 @@
+/* single article page
+----------------------------------------------------------------------------- */
+.article-wrapper {
+	display: flex;
+}
+
+.article-content {
+	max-width: 50rem;
+}
+
+.article-title {
+	margin-bottom: 2rem !important;
+}
+
+strong {
+	color: $black-80;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	@include playfair;
+}
+
+.sidebar {
+	width: calc(25% - 2rem);
+	margin-right: 2rem;
+	border-left: 1px solid #eeeeee;
+
+	h2 {
+		margin-top: 0;
+		margin-left: 1rem;
+		font-size: 1.5rem;
+	}
+} 
