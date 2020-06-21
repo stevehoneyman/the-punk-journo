@@ -99,6 +99,35 @@
 	}
 }
 
+.article {
+	display: flex;
+}
+
+.article-title {
+	margin-bottom: 2rem !important;
+}
+
+strong {
+	color: $black-80;
+}
+
+.story {
+	//margin-right: 25%;
+	max-width: 50rem;
+}
+
+.sidebar {
+	width: calc(25% - 2rem);
+	margin-right: 2rem;
+	border-left: 1px solid $light-grey;
+
+	h2 {
+		margin-top: 0;
+		margin-left: 1rem;
+	//	@include opensans;
+	}
+} 
+
 code {
 	display: block;
 	color: red;

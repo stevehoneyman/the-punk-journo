@@ -170,6 +170,33 @@ ul, li {
   margin-bottom: .5rem;
 }
 
+.article {
+  display: flex;
+}
+
+.article-title {
+  margin-bottom: 2rem !important;
+}
+
+strong {
+  color: #333333;
+}
+
+.story {
+  max-width: 50rem;
+}
+
+.sidebar {
+  width: calc(25% - 2rem);
+  margin-right: 2rem;
+  border-left: 1px solid #cccccc;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
 code {
   display: block;
   color: red;
