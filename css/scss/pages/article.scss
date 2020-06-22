@@ -1,7 +1,9 @@
 /* single article page
 ----------------------------------------------------------------------------- */
 .article-wrapper {
-	display: flex;
+	@include mq(800px) {
+		display: flex;
+	}
 }
 
 .article-content {
