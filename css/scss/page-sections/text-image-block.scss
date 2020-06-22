@@ -2,7 +2,6 @@
 ----------------------------------------------------------------------------- */
 .text-image-block {
 	.intro {
-
 		@include mq(1000px) {
 			margin-right: 20%;
 		}
@@ -153,7 +152,6 @@
 				padding: .25rem;
 				font-weight: bold;
 				color: $black-80;
-			//	background: $black-80;
 			}
 
 			img {
@@ -166,6 +164,10 @@
 			p {
 				padding: .25rem;
 				font-size: 1rem;
+			}
+
+			a {
+				color: $black-70;
 			}
 
 			@include mq(600px) {

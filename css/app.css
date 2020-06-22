@@ -119,55 +119,12 @@ ul, li {
   background: #000000;
 }
 
-.video-title {
-  margin-top: 3rem;
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  margin: 3rem 0;
-  height: 0;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.articles-grid {
-  display: none;
-  margin-top: 1rem;
-}
-
-@media (min-width: 680px) {
-  .articles-grid {
-    display: flex;
-  }
-}
-
-.white-holder {
-  width: 100%;
-  border: 1px solid #eeeeee;
-  background: #f5f5f5;
-}
-
-@media (min-width: 1001px) {
-  .white-holder {
-    width: calc(25% - 22.5px);
-    margin-left: 30px;
-  }
-  .white-holder:nth-of-type(4n+1) {
-    margin-left: 0;
-  }
-}
-
 .additional-links li {
   margin-bottom: .5rem;
+}
+
+.insulate {
+  padding-top: 2rem;
 }
 
 /* typography
@@ -318,10 +275,6 @@ section {
 .recent-articles .go-to {
   margin-top: 3rem;
   font-weight: bold;
-}
-
-.insulate {
-  padding-top: 2rem;
 }
 
 /* header
@@ -703,6 +656,10 @@ footer {
   font-size: 1rem;
 }
 
+.text-image-block .container-half article a {
+  color: #444444;
+}
+
 @media (min-width: 600px) {
   .text-image-block .container-half article {
     width: calc(50% - 15px);
@@ -859,6 +816,54 @@ footer {
 
 .books-cv .books-cv-item {
   margin-bottom: 1rem;
+}
+
+/* articles-archive
+----------------------------------------------------------------------------- */
+.video-title {
+  margin-top: 3rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  margin: 3rem 0;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.articles-grid {
+  display: none;
+  margin-top: 1rem;
+}
+
+@media (min-width: 680px) {
+  .articles-grid {
+    display: flex;
+  }
+}
+
+.white-holder {
+  width: 100%;
+  border: 1px solid #eeeeee;
+}
+
+@media (min-width: 681px) {
+  .white-holder {
+    width: calc(25% - 22.5px);
+    margin-left: 30px;
+  }
+  .white-holder:nth-of-type(4n+1) {
+    margin-left: 0;
+  }
 }
 
 /* single article page
