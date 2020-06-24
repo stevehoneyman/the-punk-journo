@@ -312,20 +312,20 @@ header .header-inner {
 
 header .header-inner .logo {
   position: absolute;
-  left: 1rem;
-  width: 175px;
+  top: -25px;
+  left: 0rem;
 }
 
 @media (min-width: 1001px) {
   header .header-inner .logo {
-    top: 3px;
+    top: -10px;
   }
 }
 
 @media (min-width: 1200px) {
   header .header-inner .logo {
     width: auto;
-    left: -3rem;
+    left: -1rem;
   }
 }
 
@@ -383,7 +383,7 @@ header .header-inner .main-nav {
 
 header .header-inner .main-nav ul {
   padding: 3rem 1rem;
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 
 header .header-inner .main-nav ul a {
