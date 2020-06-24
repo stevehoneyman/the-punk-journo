@@ -28,15 +28,15 @@ header {
 
 		.logo {
 			position: absolute;
-		//	top: -14px;
+			top: -14px;
 			left: 1rem;
 			width: 200px;
 		//	box-shadow: 3px 3px $black-70;
 
 			@include mq(1001px) {
 				top: -9px;
-				border-top: 2px solid $black-70;
-				border-right: 5px solid $black;
+			//	border-top: 2px solid $black-70;
+			//	border-right: 5px solid $black;
 			}
 
 
@@ -54,7 +54,7 @@ header {
 			}
 
 			img {
-				width: 250px;
+			//	width: 250px;
 			}
 		}
 

@@ -312,6 +312,7 @@ header .header-inner {
 
 header .header-inner .logo {
   position: absolute;
+  top: -14px;
   left: 1rem;
   width: 200px;
 }
@@ -319,8 +320,6 @@ header .header-inner .logo {
 @media (min-width: 1001px) {
   header .header-inner .logo {
     top: -9px;
-    border-top: 2px solid #444444;
-    border-right: 5px solid #000000;
   }
 }
 
@@ -337,10 +336,6 @@ header .header-inner .logo a {
   letter-spacing: 1px;
   color: #333333;
   text-decoration: none;
-}
-
-header .header-inner .logo img {
-  width: 250px;
 }
 
 header .header-inner .menu {
