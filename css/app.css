@@ -318,7 +318,7 @@ header .header-inner .logo {
 
 @media (min-width: 1001px) {
   header .header-inner .logo {
-    top: 3px;
+    top: -9px;
     border-top: 2px solid #444444;
     border-right: 5px solid #000000;
   }
@@ -327,7 +327,7 @@ header .header-inner .logo {
 @media (min-width: 1200px) {
   header .header-inner .logo {
     width: auto;
-    left: -1rem;
+    left: -3rem;
   }
 }
 
@@ -385,7 +385,7 @@ header .header-inner .main-nav {
 
 header .header-inner .main-nav ul {
   padding: 3rem 1rem;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 header .header-inner .main-nav ul a {

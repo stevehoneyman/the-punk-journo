@@ -34,7 +34,7 @@ header {
 		//	box-shadow: 3px 3px $black-70;
 
 			@include mq(1001px) {
-				top: 3px;
+				top: -9px;
 				border-top: 2px solid $black-70;
 				border-right: 5px solid $black;
 			}
