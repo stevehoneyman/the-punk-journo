@@ -313,6 +313,7 @@ header .header-inner {
 header .header-inner .logo {
   position: absolute;
   left: 1rem;
+  width: 200px;
 }
 
 @media (min-width: 1001px) {
