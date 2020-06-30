@@ -312,21 +312,13 @@ header .header-inner {
 
 header .header-inner .logo {
   position: absolute;
-  top: -14px;
+  top: .25rem;
   left: 1rem;
-  width: 200px;
-}
-
-@media (min-width: 1001px) {
-  header .header-inner .logo {
-    top: -9px;
-  }
 }
 
 @media (min-width: 1200px) {
   header .header-inner .logo {
     width: auto;
-    left: -3rem;
   }
 }
 
