@@ -9,17 +9,19 @@
 
 	.container-full {
 		display: flex;
-	
+		-webkit-display: flex;
+
 		img {
 			display: none;
 
 			@include mq(1000px) {
-				display: block;	
+				display: block;
 				align-self: flex-start;
 				min-width: 250px; // tighten
+				max-height: 375px;
 			}
-		} 
-		
+		}
+
 		.content {
 			display: flex;
 			flex-direction: column;
@@ -43,13 +45,13 @@
 
 			blockquote {
 				position: relative;
-				align-self: flex-start;	
+				align-self: flex-start;
 				height: auto;
 				padding: 10px 0 10px 20px;
 				margin-right: 5%;
 				font-size: 2.5rem;
 				line-height: .55;
-				font-weight: bold;	
+				font-weight: bold;
 				color: $white;
 				background: $off-white;
 
@@ -107,7 +109,7 @@
 
 
 			// content
-			@include mq(800px) { 
+			@include mq(800px) {
 				// margin-left: 2rem;
 
 				.text {
@@ -118,7 +120,7 @@
 							display: block;
 						}
 					}
-	
+
 				.links  {
 						margin: .5rem 5% 0;
 						align-self: flex-end;
@@ -126,10 +128,10 @@
 
 				.go-to {
 						text-align: right;
-					}		
+					}
 				}
 
-			@include mq(1000px) { 
+			@include mq(1000px) {
 				margin-left: 2rem;
 
 				}
@@ -182,18 +184,18 @@
 	}
 
 	.container-quarter {
-		
+
 		@include mq(600px) {
 			display: flex;
-		}	
-	
+		}
+
 		article {
 			width: 100%;
 			min-height: 250px;
 			padding: .25rem;
 			border: 1px solid #eeeeee;
-			margin-bottom: .5rem;	
-		//	box-shadow: 3px 4px $off-white;	
+			margin-bottom: .5rem;
+		//	box-shadow: 3px 4px $off-white;
 
 			h3 {
 				font-weight: bold;
@@ -212,5 +214,3 @@
 		}
 	}
 }
-
-
