@@ -28,13 +28,13 @@ header {
 
 		.logo {
 			position: absolute;
-			top: -14px;
+			top: .25rem;
 			left: 1rem;
-			width: 200px;
+		//	width: 200px;
 		//	box-shadow: 3px 3px $black-70;
 
 			@include mq(1001px) {
-				top: -9px;
+			//	top: -9px;
 			//	border-top: 2px solid $black-70;
 			//	border-right: 5px solid $black;
 			}
@@ -42,7 +42,7 @@ header {
 
 			@include mq(1200px) {
 				width: auto;
-				left: -$logo-left;
+			//	left: -$logo-left;
 			}
 			
 			a {
