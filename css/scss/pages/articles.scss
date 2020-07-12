@@ -1,19 +1,19 @@
 /* books
 ----------------------------------------------------------------------------- */
-
-	.feature-full {
+.feature-full {
 		img {
 			margin: 0 3rem 1rem 0;
 
 			@include mq(600px) {
-				max-width: 170px;
+				max-width: 400px;
 			}
 		}
 
 		@include mq(600px) {
 			display: flex;
+		//	border: 3px solid red;
 		}
-	}	
+	}
 
 	h3 {
 		@include playfair;
@@ -28,7 +28,7 @@
 	span {
 		display: block;
 		line-height: 1.2;
-	
+
 		&.buy-outbound {
 			margin-bottom: 1rem;
 			font-weight: bold;
@@ -47,6 +47,3 @@
 			}
 	 	}
 	}
-
-
-		
