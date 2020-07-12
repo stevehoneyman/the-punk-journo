@@ -54,4 +54,19 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
+	.buy-outbound {
+		a {
+			font-size: .875rem;
+			font-weight: 200;
+			color: $grey;
+			transition: 300ms;
+		}
+
+		a:hover {
+			color: $white;
+			text-decoration: none;
+			background: $black;
+		}
+	}
 }

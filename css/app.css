@@ -904,6 +904,17 @@ span.buy-outbound {
   flex-direction: column;
   justify-content: space-between;
 }
+.books .buy-outbound a {
+  font-size: .875rem;
+  font-weight: 200;
+  color: #707070;
+  transition: 300ms;
+}
+.books .buy-outbound a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #000000;
+}
 
 .contact {
   padding-top: 2rem;
