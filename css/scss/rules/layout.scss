@@ -16,6 +16,13 @@ section {
 }
 
 .recent-articles {
+	h3 {
+	 	a {
+			font-weight: 400;
+			text-decoration: none;
+		}
+	}
+
 	li {
 		margin-bottom: .5rem;
 	}
