@@ -36,16 +36,23 @@
 	}
 
 	.books-grid {
-		@include mq(480px) {
+		@include mq(380px) {
 			display: flex;
-	 		flex-wrap: nowrap;
+	 		flex-wrap: wrap;
+			justify-content: space-between;
+
+			.book {
+				max-width: 160px;
+			}
+	 	}
+
+		@include mq(800px) {
+			flex-wrap: nowrap;
 			justify-content: space-between;
 	 	}
 
 	 	@include mq(1200px) {
-			.book {
-				max-width: 160px;
-			}
+
 	 	}
 	}
 

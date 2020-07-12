@@ -886,16 +886,20 @@ span.buy-outbound {
   margin-bottom: 1rem;
   font-weight: bold;
 }
-@media (min-width: 480px) {
+@media (min-width: 380px) {
   .books .books-grid {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
-}
-@media (min-width: 1200px) {
   .books .books-grid .book {
     max-width: 160px;
+  }
+}
+@media (min-width: 800px) {
+  .books .books-grid {
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 .books .no-grid {
