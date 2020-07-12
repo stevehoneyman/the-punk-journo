@@ -57,14 +57,13 @@ ul, li {
 /* globals
 ----------------------------------------------------------------------------- */
 .wrap-wide {
-  max-width: 78rem;
   padding: 0;
   margin: auto;
 }
 @media (min-width: 680px) {
   .wrap-wide {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
   }
 }
 
@@ -75,7 +74,7 @@ ul, li {
 }
 @media (min-width: 680px) {
   .wrap {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }
 
@@ -134,25 +133,20 @@ blockquote {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 h1.wrap-title {
-  max-width: 76rem;
+  max-width: 70rem;
   padding-top: 1rem;
   margin: auto;
 }
 h1.page-title {
   padding: 1rem 0;
 }
-@media (min-width: 1200px) {
-  h1.page-title {
-    transform: translateX(-1rem);
-  }
-}
 @media (min-width: 680px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -178,7 +172,7 @@ h2:before {
 @media (min-width: 1200px) {
   h2.block-header {
     padding: 0 1rem 0 .25rem;
-    transform: translateX(-5rem);
+    transform: translateX(-1rem);
   }
 }
 h2.tat {
@@ -212,12 +206,13 @@ p {
 .text-block .intro-text {
   max-width: 68rem;
   font-size: 1.125rem;
-  line-height: 1.4;
+  line-height: 1.25;
+  margin: 0 auto;
 }
 @media (min-width: 420px) {
   .text-block .intro-text {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.4;
   }
 }
 .text-block p {
@@ -225,7 +220,7 @@ p {
 }
 @media (min-width: 420px) {
   .text-block p {
-    line-height: 1.6;
+    line-height: 1.4;
   }
 }
 
@@ -236,7 +231,7 @@ p {
 /* layout:
 ----------------------------------------------------------------------------- */
 main {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem 3rem 1rem;
   background: #ffffff;
@@ -277,7 +272,7 @@ header {
 header .header-inner {
   position: relative;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1280px;
   padding-right: 1rem;
   margin: 0 auto;
 }
@@ -292,15 +287,6 @@ header .header-inner .logo {
   position: absolute;
   top: .25rem;
   left: 1rem;
-<<<<<<< HEAD
-  width: 200px;
-}
-@media (min-width: 1001px) {
-  header .header-inner .logo {
-    top: -9px;
-  }
-=======
->>>>>>> affdf149c5d5d2373c664191f8e86e7991af81f4
 }
 @media (min-width: 1200px) {
   header .header-inner .logo {
@@ -423,7 +409,7 @@ header .header-inner .fa-search {
 ----------------------------------------------------------------------------- */
 .banner-image {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 

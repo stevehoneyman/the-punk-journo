@@ -1,17 +1,17 @@
 /* layout:
 ----------------------------------------------------------------------------- */
 main {
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 1rem 3rem 1rem;
 	background: $white;
 }
 
 section {
-	padding: 1rem 0 0 0; 
+	padding: 1rem 0 0 0;
 
 	@include mq(680px) {
-		padding: 1rem 0 3rem 0;	
+		padding: 1rem 0 3rem 0;
 	}
 }
 
@@ -24,5 +24,4 @@ section {
 		margin-top: 3rem;
 		font-weight: bold;
 	}
-} 
-
+}

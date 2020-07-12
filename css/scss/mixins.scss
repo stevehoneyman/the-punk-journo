@@ -4,13 +4,13 @@
 /* layout
 --------------------------- */
 @mixin wrap-wide {
-	max-width: 78rem; // was 75rem
+//	max-width: 76rem; // was 75rem
 	padding: 0;
 	margin: auto;
 
 	@include mq(680px) {
-		padding-right: 1rem;
-		padding-left: 1rem;
+		padding-right: 1.25rem;
+		padding-left: 1.25rem;
 	}
 }
 
@@ -20,7 +20,7 @@
 	margin: auto;
 
 	@include mq(680px) {
-		padding: 0 1rem;
+		padding: 0 1.5rem;
 	}
 }
 

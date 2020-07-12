@@ -1,6 +1,6 @@
 /* typography
 ----------------------------------------------------------------------------- */
-h1, 
+h1,
 h2,
 blockquote {
 	@include playfair;
@@ -9,12 +9,12 @@ blockquote {
 }
 
 h1 {
-	font-size: 2.25rem; // 1.75
+	font-size: 2rem; // 1.75
 	line-height: 1.2;
 
 
 	&.wrap-title {
-		max-width: 76rem;
+		max-width: 70rem;
 		padding-top: 1rem;
 		margin:  auto;
 	}
@@ -23,12 +23,12 @@ h1 {
 		padding: 1rem 0;
 
 		@include mq(1200px) {
-			transform: translateX(-1rem);
+		//	transform: translateX(-1rem);
 		}
 	}
 
 	@include mq(680px) {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 }
 
@@ -52,13 +52,13 @@ h2 {
 		opacity: .9;
 
 	}
-	
+
 	@include mq(1200px) {
 		&.block-header {
 			padding: 0 1rem 0 .25rem;
-			transform: translateX(-5rem);
+			transform: translateX(-1rem);
 		}
-	} 
+	}
 
 	&.tat {
 		background: url('../images/tape-1.jpg');
@@ -72,7 +72,7 @@ h2 {
 		mix-blend-mode: multiply;
 	}
 }
-	
+
 h3 {
 	@include playfair;
 	font-size: 1.125rem;
@@ -95,28 +95,26 @@ p {
 	.intro-text {
 		max-width: 68rem;
 		font-size: 1.125rem;
-		line-height: 1.4;
+		line-height: 1.25;
+		margin: 0 auto;
 
 		@include mq(420px) {
-			font-size: 1.4rem;
-			line-height: 1.6;
-		}
-	}			
-
-	p {
-		font-size: 1.2rem;	
-
-		@include mq(420px) {
-			line-height: 1.6;
+			font-size: 1.2rem;
+			line-height: 1.4;
 		}
 	}
-} 
+
+	p {
+		font-size: 1.2rem;
+
+		@include mq(420px) {
+			line-height: 1.4;
+		}
+	}
+}
 
 .additional-links {
 	a {
 		color: $black-70;
 	}
 }
-
-
-	
