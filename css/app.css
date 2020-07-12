@@ -838,13 +838,19 @@ strong {
 @media (min-width: 480px) {
   .books .books-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
   .books .books-grid .book {
-    max-width: 170px;
+    max-width: 160px;
   }
+}
+.books .no-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=app.css.map */
