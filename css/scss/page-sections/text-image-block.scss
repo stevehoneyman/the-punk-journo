@@ -3,7 +3,8 @@
 .text-image-block {
 	.intro {
 		@include mq(1000px) {
-			margin-right: 20%;
+			max-width: 66rem;
+			margin: 0 auto;
 		}
 	}
 
@@ -141,6 +142,7 @@
 	.container-half {
 		@include mq(600px) {
 			display: flex;
+			margin: 2rem 0;
 		}
 
 		article {
@@ -187,6 +189,7 @@
 
 		@include mq(600px) {
 			display: flex;
+			margin: 2rem 0;
 		}
 
 		article {

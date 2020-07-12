@@ -154,7 +154,7 @@ h2 {
   position: relative;
   display: inline-block;
   padding: 0 1rem 0 .25rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
   font-size: 1.75rem;
   line-height: 1.2;
 }
@@ -204,14 +204,14 @@ p {
 }
 
 .text-block .intro-text {
-  max-width: 68rem;
+  max-width: 66rem;
   font-size: 1.125rem;
   line-height: 1.25;
   margin: 0 auto;
 }
 @media (min-width: 420px) {
   .text-block .intro-text {
-    font-size: 1.2rem;
+    font-size: 1.275rem;
     line-height: 1.4;
   }
 }
@@ -426,7 +426,7 @@ footer {
 ----------------------------------------------------------------------------- */
 .text-block .container {
   width: 100%;
-  max-width: 70rem;
+  max-width: 66rem;
   padding-top: 3rem;
   margin: 0 auto;
 }
@@ -435,7 +435,8 @@ footer {
 ----------------------------------------------------------------------------- */
 @media (min-width: 1000px) {
   .text-image-block .intro {
-    margin-right: 20%;
+    max-width: 66rem;
+    margin: 0 auto;
   }
 }
 .text-image-block .container-full {
@@ -555,6 +556,7 @@ footer {
 @media (min-width: 600px) {
   .text-image-block .container-half {
     display: flex;
+    margin: 2rem 0;
   }
 }
 .text-image-block .container-half article {
@@ -593,6 +595,7 @@ footer {
 @media (min-width: 600px) {
   .text-image-block .container-quarter {
     display: flex;
+    margin: 2rem 0;
   }
 }
 .text-image-block .container-quarter article {

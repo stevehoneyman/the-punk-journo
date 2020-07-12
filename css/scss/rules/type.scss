@@ -36,7 +36,7 @@ h2 {
 	position: relative;
 	display: inline-block;
 	padding: 0 1rem 0 .25rem;
-	margin: 1rem 0;
+	margin: 2rem 0;
 	font-size: 1.75rem;
 	line-height: 1.2;
 
@@ -93,13 +93,13 @@ p {
 
 .text-block {
 	.intro-text {
-		max-width: 68rem;
+		max-width: 66rem;
 		font-size: 1.125rem;
 		line-height: 1.25;
 		margin: 0 auto;
 
 		@include mq(420px) {
-			font-size: 1.2rem;
+			font-size: 1.275rem;
 			line-height: 1.4;
 		}
 	}
