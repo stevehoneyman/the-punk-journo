@@ -518,22 +518,21 @@ footer {
   background: #333333;
 }
 .text-image-block .container-full .content blockquote span:nth-of-type(1) {
-  padding-left: 1rem;
+  padding-left: .5rem;
   clip-path: polygon(-0.24% 7.89%, 91.42% -6.99%, 89.51% 108.42%, 2.07% 111.84%);
 }
 .text-image-block .container-full .content blockquote span:nth-of-type(2) {
-  padding: 1.25rem;
+  padding: .5rem 1.95rem;
   text-align: right;
   clip-path: polygon(4.89% -18.2%, 97.42% -2.64%, 86.94% 149.36%, 2.07% 111.84%);
 }
 .text-image-block .container-full .content blockquote span:nth-of-type(3) {
-  padding-bottom: 1.25rem;
+  padding-bottom: 1rem;
   text-align: right;
   clip-path: polygon(-0.24% -3.22%, 96.8% -19.31%, 109.18% 106.24%, -5.2% 127.06%);
 }
 .text-image-block .container-full .content blockquote span:nth-of-type(4) {
   padding-right: 2rem;
-  padding-bottom: 2rem;
   text-align: right;
   clip-path: polygon(2.33% 1.83%, 94.85% -18.25%, 94.64% 85.56%, 2.07% 96.69%);
 }
@@ -890,7 +889,7 @@ span.buy-outbound {
 @media (min-width: 480px) {
   .books .books-grid {
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
