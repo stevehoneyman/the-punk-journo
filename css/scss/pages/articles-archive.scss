@@ -32,8 +32,8 @@
 
 .white-holder {
 	width: 100%;
-	border: 1px solid #eeeeee;
-	
+	border: 1px solid #b9b3b3;
+
 
 	@include mq(681px) {
 		width: calc(25% - 22.5px);
