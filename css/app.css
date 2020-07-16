@@ -765,7 +765,7 @@ footer {
 
 .articles-grid {
   display: none;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 @media (min-width: 680px) {
   .articles-grid {
@@ -823,6 +823,9 @@ strong {
 
 /* books
 ----------------------------------------------------------------------------- */
+.feature-full {
+  margin-bottom: 1rem;
+}
 .feature-full img {
   margin: 0 3rem 1rem 0;
 }

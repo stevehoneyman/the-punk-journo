@@ -22,7 +22,7 @@
 
 .articles-grid {
 	display: none;
-	margin-top: 1rem;
+	margin: 1rem 0;
 
 	@include mq(680px) {
 		display: flex;
