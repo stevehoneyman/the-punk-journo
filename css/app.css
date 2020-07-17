@@ -291,8 +291,8 @@ header .header-inner {
 }
 header .header-inner .logo {
   position: absolute;
-  top: -.75rem;
-  left: -1.5rem;
+  top: -1rem;
+  left: -.5rem;
 }
 @media (min-width: 1200px) {
   header .header-inner .logo {
@@ -307,7 +307,7 @@ header .header-inner .logo a {
   text-decoration: none;
 }
 header .header-inner .logo img {
-  width: 300px;
+  width: 250px;
 }
 header .header-inner .menu {
   position: absolute;
